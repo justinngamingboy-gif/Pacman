@@ -1,3 +1,4 @@
+# Pacman game
 from tkinter import *
 class Maze():
     def __init__(self):
