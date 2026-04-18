@@ -2,7 +2,11 @@ from tkinter import *
 from maze import Maze
 from pacman import Pacman
 
-m = Maze()
-m.initialize_maze()
+root = Tk()
+canvas = Canvas(root, width=600, height=550, bg="black")
+canvas.pack()
+
+m = Maze(canvas)
 m.draw_maze()
-m.root.mainloop()
+
+root.mainloop()

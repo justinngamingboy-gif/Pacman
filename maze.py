@@ -1,12 +1,9 @@
 from tkinter import *
 
 class Maze():
-    def __init__(self):
+    def __init__(self, canvas):
         self.cell_size = 25
-        self.root = Tk()
-        self.canvas = Canvas(self.root, width=600, height=550, bg="black")
-        self.canvas.pack()
-    def initialize_maze(self):
+        self.canvas = canvas
         self.grid_maze = [
             [1] * 22,
             [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
