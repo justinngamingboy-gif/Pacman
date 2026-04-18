@@ -9,4 +9,7 @@ canvas.pack()
 m = Maze(canvas)
 m.draw_maze()
 
+p = Pacman(canvas, 2, 2)
+p.draw_pacman()
+
 root.mainloop()
